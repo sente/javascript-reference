@@ -1,5 +1,4 @@
 [01_objects.js](01_objects.js):
-
 ```javascript
 var str = "Hello";                // local variable, when inside a function
 str2 = "Hello World";             // global variable in default context (window.str2)
@@ -35,11 +34,7 @@ newArray.push(newObject);         // add new item
 newArray.pop();                   // remove it
 ```
 
-
-
-
 [02_defining_functions.js](02_defining_functions.js):
-
 ```javascript
 function foo(a,b){                  // global function
   return a + b;
@@ -65,11 +60,7 @@ function bar(a,b){
 foo(1,2) == fn(1,2) == 3;           // true
 ```
 
-
-
-
 [03_conditionals_and_loops.js](03_conditionals_and_loops.js):
-
 ```javascript
 if (str == "Hello"){    // if-else
   alert("Hi");          // popup dialog
@@ -105,11 +96,7 @@ for (var key in obj){
 }
 ```
 
-
-
-
 [04_comparisons_and_manipulations.js](04_comparisons_and_manipulations.js):
-
 ```javascript
 /* javascript types */
 typeof("string") == "string"
@@ -144,11 +131,7 @@ matches = "hello".match(re);       // use it
 "hello".replace(/h/,"b")           // => "bello"
 ```
 
-
-
-
 [05_classes.js](05_classes.js):
-
 ```javascript
 function Person(first, last) {              // create "constructor"
     this.first = first;                     // public variables -- reference current object
@@ -173,11 +156,7 @@ var bob = new Person("Bob", "Smith");       // "new" creates an object
 bob.fullName();                             // => "Bob Smith"
 ```
 
-
-
-
 [06_browser_dom_and_gui.js](06_browser_dom_and_gui.js):
-
 ```javascript
 alert("message");                               // messagebox with "OK"
 var choice = confirm("message");                // OK/CANCEL true or false
@@ -195,11 +174,7 @@ y = document.getElementById("myinput");         // input area/textarea
 y.value = "Hi";                                 // get or set text
 ```
 
-
-
-
 [07_advanced_javascript.js](07_advanced_javascript.js):
-
 ```javascript
 function foo(a,b){              // will raise exception
   var c = a + b;
@@ -218,7 +193,4 @@ eval("x = 3");                  // execute arbitrary code
 timer = setTimeout("myfunction()", 1000)    // execute in 1 second (1000ms)
 clearTimeout(timer);                        // cancel event
 ```
-
-
-
 
